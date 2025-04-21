@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+   
+      <h1 class="text-center display-3"> AGROASIST</h1>
+    
+
+
+<!-- =========================================================== -->
+<!-- ENCABEZADO -->
+<!-- =========================================================== -->
+
+
+<header class="container-fluid bg-warning d-flex justify-content-center">
+  <p class= "text-ligth mb-0 p-2 fs-6"> Cultivando juntos un futuro sostenible: tecnología e innovación al alcance de tu hogar</p>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <span class="text-ligth fs-5 fw-bold">AGROASIST</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================================================== -->
+<!-- SLIDER DE IMAGENES-->
+<!-- =========================================================== -->
+<!-- Bootstrap CSS si no está incluido -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Estilos para embellecer y ajustar tamaño -->
+<style>
+  .carousel-inner img {
+    max-height: 450px;  /* Ajusta la altura máxima de las imágenes */
+    object-fit: cover;  /* Mantiene el recorte visual bonito */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .carousel {
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+  }
+</style>
+
+<!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="./IMG/IMAGEN IMPOR 2.jpeg" class="d-block w-100" alt="IMAGEN 1">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./IMG/IMAGEN IMPOR 4.jpeg" class="d-block w-100" alt="IMAGEN 2">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./IMG/IMAGEN IMPOR 5.jpeg" class="d-block w-100" alt="IMAGEN 3">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./IMG/umnaja-teplica-svoimi-rukami_5.jpg" class="d-block w-100" alt="IMAGEN 4">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./IMG/XD 4.jpeg" class="d-block w-100" alt="IMAGEN 5">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+
+    
+<!-- =========================================================== -->
+<!-- INTRO-->
+<!-- =========================================================== -->
+
+<section class="w-50 mx-auto text-center pt-5"id="intro">
+  <h1 class="p-3 fs 2 border-top border-3"><span class="text-ligth"> AGROASIST</span></h1>
+  <p class="p-3 fs-4"><span class="text-ligth"></span>Es una iniciativa revolucionaria que combina automatización y tecnología para mejorar la producción de alimentos frescos en las zonas urbanas(Casas, apartamentos, conjuntos residenciales, edificios, etc.) reducidas. A través de invernaderos inteligentes, AGROASIST facilita la siembra eficiente con sistemas automatizados que regulan el ambiente, el riego y la nutrición de los alimentos.</p>
+</section>
+<!-- =========================================================== -->
+<!-- SERVICIOS-->
+<!-- =========================================================== -->
+<section class="container-fluid">
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="row g-0 align-items-center">
+          <!-- Imagen redonda -->
+          <div class="col-md-4 text-center p-3">
+            <img src="./IMG/REPRESENTANTE DE AGROASIST.jpeg" alt="Desarrolladora del Proyecto" class="img-fluid rounded-circle" width="180" height="180">
+          </div>
+          <!-- Texto -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Desarrolladora del Proyecto</h3>
+              <p class="card-text">
+                El proyecto <strong>AGROASIST</strong> ha sido desarrollado por <strong>Danna Fernanda Motta Hernández</strong>, estudiante de primer semestre en el Tecnológico de Automatización Industrial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .section-container {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  .section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .section-text {
+    color: #34495e;
+    font-size: 1.1rem;
+  }
+  .img-rounded {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<div class="container">
+
+  <!-- Problemática -->
+  <div class="section-container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3">
+        <img src="./IMG/PROBLEMATICAS.jpeg" alt="PROBLEMÁTICA" class="img-fluid img-rounded" width="180" height="160">
+      </div>
+      <div class="col-md-8">
+        <h3 class="section-title">Problemática</h3>
+        <p class="section-text">
+          ¿Cómo tener un invernadero automatizado con acceso a una aplicación como asistente para las siembras de alimentos?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Justificación -->
+  <div class="section-container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3">
+        <img src="./IMG/umnaja-teplica-svoimi-rukami_5.jpg" alt="Justificación" class="img-fluid img-rounded" width="180" height="160">
+      </div>
+      <div class="col-md-8">
+        <h3 class="section-title">Justificación de la Problemática</h3>
+        <p class="section-text">
+          Desarrollar una aplicación que proporcione datos en tiempo real sobre las mejores temporadas de siembra ofrecería una herramienta invaluable para las personas. Los invernaderos automatizados juegan un papel crucial en este contexto, protegiendo los cultivos y regulando factores ambientales.
+          <br><br>
+          Al integrarse con la aplicación, se maximizan los beneficios, permitiendo ajustes automáticos en tiempo real y asegurando condiciones óptimas para el cultivo continuo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Objetivo General -->
+  <div class="section-container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3">
+        <img src="./IMG/IMAGEN IMPOR 1.jpeg" alt="Objetivo General" class="img-fluid img-rounded" width="180" height="160">
+      </div>
+      <div class="col-md-8">
+        <h3 class="section-title">Objetivo General</h3>
+        <p class="section-text">
+          Diseñar, implementar y optimizar un sistema automatizado en los invernaderos que contribuya a la seguridad alimentaria y nutricional, proporcionando un entorno controlado y sostenible que maximice la siembra de alimentos frescos en espacios reducidos. Además, mejorar la eficiencia energética y la calidad de los cultivos, reducir el uso de pesticidas y facilitar la gestión remota, promoviendo prácticas agrícolas innovadoras en áreas urbanas, desde la comodidad del hogar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Objetivos Específicos -->
+  <div class="section-container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-3">
+        <img src="./IMG/XD.jpeg" alt="Objetivos Específicos" class="img-fluid img-rounded" width="180" height="160">
+      </div>
+      <div class="col-md-8">
+        <h3 class="section-title">Objetivos Específicos</h3>
+        <ul class="section-text">
+          <li><strong>Implementar sistemas de control ambiental:</strong> Regular automáticamente temperatura, humedad e iluminación.</li>
+          <li><strong>Desarrollar un sistema de riego:</strong> Automatizar el riego por goteo con precisión.</li>
+          <li><strong>Monitorear nutrientes:</strong> Sensores que ajustan los niveles para un crecimiento óptimo.</li>
+          <li><strong>Optimizar espacio de cultivo:</strong> Diseñar estructuras que maximicen el área disponible.</li>
+          <li><strong>Reducir pesticidas:</strong> Aplicar control biológico y manejo integrado de plagas.</li>
+          <li><strong>Aumentar eficiencia energética:</strong> Usar energías renovables y sistemas inteligentes.</li>
+          <li><strong>Mejorar calidad y rendimiento:</strong> Ajustar variables para obtener mejores cultivos.</li>
+          <li><strong>Gestión remota:</strong> Plataforma digital para monitoreo y control en tiempo real.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- =========================================================== -->
+<!-- SPEECH DE AGROASIST-->
+<!-- =========================================================== -->
+
+<!-- Estilos opcionales para mejorar el diseño -->
+<style>
+  .video-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .video-section h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+
+  .video-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Relación 16:9 */
+  }
+
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+</style>
+
+<!-- Sección con el video -->
+<section class="video-section container my-5">
+  <h2>🎤 Speech de AGROASIST</h2>
+  <div class="video-responsive">
+    <iframe src="https://www.youtube.com/embed/my4IZRjGOqo" title="Speech de AGROASIST"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+<!-- =========================================================== -->
+<!-- diagrama de gantt DE AGROASIST-->
+<!-- =========================================================== -->
+<!-- Asegúrate de tener Bootstrap incluido -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Estilos personalizados para resaltar la sección -->
+<style>
+  .gantt-section {
+    background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    padding: 60px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .gantt-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .gantt-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #a5d6a7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<!-- Sección Diagrama de Gantt -->
+<section class="container my-5">
+  <div class="gantt-section">
+    <h2>📊 Diagrama de Gantt</h2>
+    <!-- Aquí insertas tu imagen -->
+    <img src="./IMG/DIAGRAMA DE GANTT DE AGROASIST.png" alt="Diagrama de Gantt" class="gantt-image">
+    <!-- Puedes cambiar la ruta de la imagen arriba -->
+  </div>
+</section>
+
+
+
+<!-- =========================================================== -->
+<!-- ACERCA DE NOSOTROS-->
+<!-- =========================================================== -->
+
+<section>
+  <style>
+    #equipo {
+      padding: 60px 20px;
+    }
+  
+    #equipo h1 {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  
+    #equipo p {
+      color: #555;
+      font-style: italic;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    .logo-agroasist {
+      width: 200px; /* ¡Aquí reducimos el tamaño visual! */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .logo-agroasist:hover {
+      transform: scale(1.05); /* efecto sutil al pasar el mouse */
+    }
+  </style>
+  
+  <div class="w-50 m-auto text-center" id="equipo">
+<h1 class="mb-5 fs-2"><span class="text-ligth">Equipo pequeño con </span>resultados grandes</h1>
+<p class="fs-4">"AGROASIST transforma pequeños espacios en grandes oportunidades. Cultiva el futuro desde casa, conecta con la naturaleza y construye un mundo más sostenible, donde cada semilla es un paso hacia un planeta mejor.</p>
+  </div>
+  <div class="mt-5 text-center">
+    <img class="img-fluid" src="./IMG/LOGO DE AGROASIST.jpeg" alt="equipo" style="max-width: 400px; height: auto;">
+  </div>
+<!-- =========================================================== -->
+                     <!--ENCUESTA-->
+<!-- =========================================================== -->
+ <!-- FOOTER CON QR Y LINK -->
+<footer class="w-100 d-flex flex-column align-items-center justify-content-center bg-light py-4 mt-5 border-top">
+  <p class="fs-5 text-center mb-3 px-3">AGROASIST &copy; Encuesta de nuestro público objetivo</p>
+
+  <a href="https://forms.office.com/r/d38XeL4FMs?origin=lprLink" target="_blank" class="btn btn-success mb-3">
+    Responde la Encuesta
+  </a>
+
+  <img src="IMG/QR DE  LA ENCUENTA.png" 
+       alt="QR Encuesta AGROASIST" class="img-fluid mb-2" style="max-width: 180px;">
+
+  <small class="text-muted">Escanea el QR para acceder desde tu celular</small>
+</footer>
+
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
