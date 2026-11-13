@@ -1,0 +1,535 @@
+
+/* AGROASIST - ESTILOS GENERALES */
+
+:root {
+  --verde: #176b3a;
+  --verde-claro: #e8f5e9;
+  --verde-oscuro: #103d29;
+  --texto: #26372d;
+  --gris: #68766d;
+  --blanco: #fff;
+  --fondo: #f6faf6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* MENU */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7%;
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 3px 15px #00000012;
+}
+
+.logo {
+  color: var(--verde);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav a {
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 700;
+  transition: color .2s;
+}
+
+.nav a:hover {
+  color: var(--verde);
+}
+
+.menu-btn {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* PORTADA */
+
+.hero {
+  min-height: 530px;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  background: linear-gradient(120deg, #103d29, #237c49);
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.tag,
+.hero .tag {
+  color: #b9e7c5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #a9e4b6;
+}
+
+.hero p {
+  max-width: 550px;
+  color: #e0eee3;
+  margin-bottom: 28px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px #00000035;
+}
+
+/* BOTONES */
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  color: white;
+  background: #25884b;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.btn:hover {
+  background: #36a85f;
+  transform: translateY(-3px);
+}
+
+/* SECCIONES */
+
+.section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading span,
+.profile span {
+  color: var(--verde);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  color: var(--verde-oscuro);
+  font-size: clamp(27px, 4vw, 38px);
+  margin-top: 8px;
+}
+
+.section-heading p {
+  color: var(--gris);
+}
+
+/* GALERIA */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform .3s;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-6px);
+}
+
+/* PROYECTO Y PERFIL */
+
+.intro-text {
+  max-width: 850px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: var(--gris);
+  font-size: 18px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 7px 25px #153d2510;
+}
+
+.profile img {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  color: var(--verde-oscuro);
+  margin: 5px 0;
+}
+
+.profile p {
+  color: var(--gris);
+}
+
+.info-grid,
+.evolution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-card,
+.evolution-grid article {
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2eee4;
+  box-shadow: 0 6px 20px #153d2509;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.info-card:hover,
+.evolution-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px #153d2515;
+}
+
+.info-card h3 {
+  color: var(--verde);
+  margin-bottom: 10px;
+}
+
+.info-card p,
+.info-card li,
+.evolution-grid p {
+  color: var(--gris);
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+/* VIDEOS */
+
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #102d1b;
+  border-radius: 17px;
+  box-shadow: 0 8px 25px #00000018;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border: 0;
+}
+
+.video-section {
+  max-width: 850px;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--verde);
+  font-weight: 700;
+}
+
+/* DIAGRAMA */
+
+.gantt img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px #00000012;
+}
+
+/* SEMESTRES */
+
+.semesters {
+  max-width: 1000px;
+}
+
+.semester-card {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 25px;
+  padding: 35px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 20px;
+  border-left: 6px solid var(--verde);
+  box-shadow: 0 8px 25px #153d2510;
+}
+
+.semester-number {
+  color: #cce9d2;
+  font-size: 58px;
+  font-weight: 900;
+}
+
+.semester-content h3 {
+  color: var(--verde-oscuro);
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.semester-content h4 {
+  color: var(--verde);
+  margin: 22px 0 8px;
+}
+
+.semester-content p,
+.semester-content li {
+  color: var(--gris);
+}
+
+.semester-content ul {
+  padding-left: 22px;
+  margin-bottom: 15px;
+}
+
+.semester-content .tag {
+  color: var(--verde);
+}
+
+.status {
+  display: inline-block;
+  padding: 7px 13px;
+  margin-top: 10px;
+  background: var(--verde-claro);
+  color: var(--verde);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* EVOLUCION */
+
+.evolution-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.evolution-grid strong {
+  color: #8acb9b;
+  font-size: 35px;
+}
+
+.evolution-grid h3 {
+  color: var(--verde);
+  margin: 8px 0;
+}
+
+/* IDENTIDAD */
+
+.identity {
+  text-align: center;
+  max-width: 750px;
+}
+
+.identity img {
+  width: 220px;
+  margin: auto auto 25px;
+  border-radius: 18px;
+}
+
+.identity h2 {
+  color: var(--verde-oscuro);
+}
+
+.identity p {
+  color: var(--gris);
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  padding: 50px 20px 25px;
+  text-align: center;
+  background: var(--verde-oscuro);
+  color: white;
+}
+
+footer p {
+  color: #d5e9da;
+  margin: 10px 0 20px;
+}
+
+footer img {
+  width: 145px;
+  margin: 25px auto;
+  padding: 8px;
+  background: white;
+  border-radius: 12px;
+}
+
+footer small {
+  display: block;
+  color: #c4d8ca;
+  margin-top: 15px;
+}
+
+/* ANIMACION DE APARICION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CELULARES Y TABLETAS */
+
+@media (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 8px 15px #00000015;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 55px 7%;
+  }
+
+  .hero-image img {
+    height: 280px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 50px 18px;
+  }
+
+  .info-grid,
+  .evolution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .semester-card {
+    grid-template-columns: 1fr;
+    padding: 23px;
+    gap: 5px;
+  }
+
+  .semester-number {
+    font-size: 40px;
+  }
+
+  .semester-content h3 {
+    font-size: 22px;
+  }
+
+  .gallery-grid img {
+    height: 140px;
+  }
+}
+
+/* RESPETA LA CONFIGURACION DE ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
